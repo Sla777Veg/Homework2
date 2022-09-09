@@ -42,6 +42,7 @@ public class Main {
         int totalNumberStudent = LydPav+AnSer+EkAn;
         int sheetsStudent = totalNumberSheets/totalNumberStudent;
         System.out.println(sheetsStudent);
+
         //Задача 4
         int machineOperationInTwoMin = 16;
         System.out.println("За 2 минута машина произвела бутылок "+ machineOperationInTwoMin+" штук");
@@ -55,35 +56,39 @@ public class Main {
         System.out.println("За три дня машина произвела бутылок "+machineOperationInMinThreeDays+" штук");
         int machineOperationInMinMonth = machineOperationInMinDay*30;
         System.out.println("За меесяц машина произвела бутылок "+machineOperationInMinMonth+" штук");
+
         //Задача 5
         int titleRequired = 120;
         int whiteRequiretOneClass = 2;
         int brownRequiretOneClass = 4;
         int expendedOnClass = whiteRequiretOneClass + brownRequiretOneClass;
-        int amountClasses = 120/expendedOnClass;
+        int amountClasses =titleRequired/expendedOnClass;
         System.out.println(amountClasses);
         int whiteRequiretAllClass = whiteRequiretOneClass * amountClasses;
         int brownRequiretAllClass = brownRequiretOneClass * amountClasses;
         System.out.println("В школе, где "+amountClasses+" классов, нужно "+whiteRequiretAllClass+ " банок белой краски и "+brownRequiretAllClass+ " банок коричневой краски");
+
         //Задача 6
         int massBananas = 5*80;
         int massMilk = 105*2;
         int massIceCream = 2*100;
         int massEggs = 4*70;
-        int titleWeight = massBananas + massMilk + massIceCream + massEggs;
+        double titleWeight = massBananas + massMilk + massIceCream + massEggs;
         System.out.println(titleWeight);
         double titleWeightKg = titleWeight/1000;
         System.out.println(titleWeightKg);
+
         //Задача 7
         int target = 7;
-        int targetKg = 7000;
-        int amountDay = 7000/250;
+        int targetG = 1000*target;
+        int amountDay = targetG/250;
         System.out.println(amountDay);
-        int amountDay2 = 7000/500;
+        int amountDay2 = targetG/500;
         System.out.println(amountDay2);
         int meanamountDay = (amountDay + amountDay2)/2;
         System.out.println(meanamountDay);
         //Задача 8
+
         int MariaGet = 67760;
         int DenisGet = 83690;
         int KristinaGet = 76230;
